@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A664E1114C936AF007FF9E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A664E1014C936AF007FF9E3 /* UIKit.framework */; };
+		1A664E1314C936AF007FF9E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A664E1214C936AF007FF9E3 /* Foundation.framework */; };
+		1A664E1514C936AF007FF9E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A664E1414C936AF007FF9E3 /* CoreGraphics.framework */; };
+		1A664E1B14C936AF007FF9E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A664E1914C936AF007FF9E3 /* InfoPlist.strings */; };
+		1A664E1D14C936AF007FF9E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A664E1C14C936AF007FF9E3 /* main.m */; };
+		1A664E2114C936AF007FF9E3 /* collegetoproAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A664E2014C936AF007FF9E3 /* collegetoproAppDelegate.m */; };
+		1A664E2414C936AF007FF9E3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A664E2214C936AF007FF9E3 /* MainWindow.xib */; };
+		1A664E2714C936AF007FF9E3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A664E2614C936AF007FF9E3 /* RootViewController.m */; };
+		1A664E2A14C936AF007FF9E3 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A664E2814C936AF007FF9E3 /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A664E0C14C936AF007FF9E3 /* collegetopro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = collegetopro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A664E1014C936AF007FF9E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A664E1214C936AF007FF9E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A664E1414C936AF007FF9E3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A664E1814C936AF007FF9E3 /* collegetopro-Info.plist */ = {isa = PBXFileReference; path = "collegetopro-Info.plist"; sourceTree = "<group>"; };
+		1A664E1A14C936AF007FF9E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A664E1C14C936AF007FF9E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A664E1E14C936AF007FF9E3 /* collegetopro-Prefix.pch */ = {isa = PBXFileReference; path = "collegetopro-Prefix.pch"; sourceTree = "<group>"; };
+		1A664E1F14C936AF007FF9E3 /* collegetoproAppDelegate.h */ = {isa = PBXFileReference; path = collegetoproAppDelegate.h; sourceTree = "<group>"; };
+		1A664E2014C936AF007FF9E3 /* collegetoproAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = collegetoproAppDelegate.m; sourceTree = "<group>"; };
+		1A664E2314C936AF007FF9E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		1A664E2514C936AF007FF9E3 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		1A664E2614C936AF007FF9E3 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		1A664E2914C936AF007FF9E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A664E0914C936AF007FF9E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A664E1114C936AF007FF9E3 /* UIKit.framework in Frameworks */,
+				1A664E1314C936AF007FF9E3 /* Foundation.framework in Frameworks */,
+				1A664E1514C936AF007FF9E3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A664E0114C936AF007FF9E3 = {
+			isa = PBXGroup;
+			children = (
+				1A664E1614C936AF007FF9E3 /* collegetopro */,
+				1A664E0F14C936AF007FF9E3 /* Frameworks */,
+				1A664E0D14C936AF007FF9E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A664E0D14C936AF007FF9E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A664E0C14C936AF007FF9E3 /* collegetopro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A664E0F14C936AF007FF9E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A664E1014C936AF007FF9E3 /* UIKit.framework */,
+				1A664E1214C936AF007FF9E3 /* Foundation.framework */,
+				1A664E1414C936AF007FF9E3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A664E1614C936AF007FF9E3 /* collegetopro */ = {
+			isa = PBXGroup;
+			children = (
+				1A664E1F14C936AF007FF9E3 /* collegetoproAppDelegate.h */,
+				1A664E2014C936AF007FF9E3 /* collegetoproAppDelegate.m */,
+				1A664E2214C936AF007FF9E3 /* MainWindow.xib */,
+				1A664E2514C936AF007FF9E3 /* RootViewController.h */,
+				1A664E2614C936AF007FF9E3 /* RootViewController.m */,
+				1A664E2814C936AF007FF9E3 /* RootViewController.xib */,
+				1A664E1714C936AF007FF9E3 /* Supporting Files */,
+			);
+			path = collegetopro;
+			sourceTree = "<group>";
+		};
+		1A664E1714C936AF007FF9E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A664E1814C936AF007FF9E3 /* collegetopro-Info.plist */,
+				1A664E1914C936AF007FF9E3 /* InfoPlist.strings */,
+				1A664E1C14C936AF007FF9E3 /* main.m */,
+				1A664E1E14C936AF007FF9E3 /* collegetopro-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A664E0B14C936AF007FF9E3 /* collegetopro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A664E2D14C936AF007FF9E3 /* Build configuration list for PBXNativeTarget "collegetopro" */;
+			buildPhases = (
+				1A664E0814C936AF007FF9E3 /* Sources */,
+				1A664E0914C936AF007FF9E3 /* Frameworks */,
+				1A664E0A14C936AF007FF9E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = collegetopro;
+			productName = collegetopro;
+			productReference = 1A664E0C14C936AF007FF9E3 /* collegetopro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A664E0314C936AF007FF9E3 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1A664E0614C936AF007FF9E3 /* Build configuration list for PBXProject "collegetopro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A664E0114C936AF007FF9E3;
+			productRefGroup = 1A664E0D14C936AF007FF9E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A664E0B14C936AF007FF9E3 /* collegetopro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A664E0A14C936AF007FF9E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A664E1B14C936AF007FF9E3 /* InfoPlist.strings in Resources */,
+				1A664E2414C936AF007FF9E3 /* MainWindow.xib in Resources */,
+				1A664E2A14C936AF007FF9E3 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A664E0814C936AF007FF9E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A664E1D14C936AF007FF9E3 /* main.m in Sources */,
+				1A664E2114C936AF007FF9E3 /* collegetoproAppDelegate.m in Sources */,
+				1A664E2714C936AF007FF9E3 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A664E1914C936AF007FF9E3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A664E1A14C936AF007FF9E3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1A664E2214C936AF007FF9E3 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A664E2314C936AF007FF9E3 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		1A664E2814C936AF007FF9E3 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A664E2914C936AF007FF9E3 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A664E2B14C936AF007FF9E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A664E2C14C936AF007FF9E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A664E2E14C936AF007FF9E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "collegetopro/collegetopro-Prefix.pch";
+				INFOPLIST_FILE = "collegetopro/collegetopro-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A664E2F14C936AF007FF9E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "collegetopro/collegetopro-Prefix.pch";
+				INFOPLIST_FILE = "collegetopro/collegetopro-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A664E0614C936AF007FF9E3 /* Build configuration list for PBXProject "collegetopro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A664E2B14C936AF007FF9E3 /* Debug */,
+				1A664E2C14C936AF007FF9E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A664E2D14C936AF007FF9E3 /* Build configuration list for PBXNativeTarget "collegetopro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A664E2E14C936AF007FF9E3 /* Debug */,
+				1A664E2F14C936AF007FF9E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A664E0314C936AF007FF9E3 /* Project object */;
+}

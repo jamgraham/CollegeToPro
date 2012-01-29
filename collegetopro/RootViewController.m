@@ -7,17 +7,40 @@
 //
 
 #import "RootViewController.h"
+#import "CollegePlayersViewController.h"
+
 
 @implementation RootViewController
-
+@synthesize deserializedData;
 
 - (void)viewDidLoad
 {
+    self.navigationItem.title = @"Colleges";
+    
     [super viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
+//    NSURL *url = [NSURL URLWithString:@"http://collegetopro.heroku.com/search/college"];
+//    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+//    [request startSynchronous];
+//    NSError *error = [request error];
+//    if (!error) {
+//        NSString *response = [request responseString];
+//        deserializedData = [response objectFromJSONString];
+//        
+        NSString *jsonUrl = @"http://collegetopro.heroku.com/search/college";
+        NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:jsonUrl]];
+        
+        JSONDecoder *jsonKitDecoder = [JSONDecoder decoder];
+        deserializedData = [[NSDictionary alloc] init];
+        deserializedData = [jsonKitDecoder parseJSONData:jsonData];
+        [deserializedData retain];
+        NSLog(@"total items: %d", [deserializedData count]);
+
+//    }
+//    
     [super viewWillAppear:animated];
 }
 
@@ -52,7 +75,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    NSLog(@"numberOfRowsInSection total items: %d", [deserializedData count]);
+
+    return [deserializedData count];
 }
 
 // Customize the appearance of table view cells.
@@ -64,8 +89,14 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
-
+    
+    NSMutableArray *asdf = [deserializedData mutableArrayValueForKey:@"college"];
+    NSMutableArray *college_name = [asdf mutableArrayValueForKey:@"college"];
+    NSMutableArray *college_id = [asdf mutableArrayValueForKey:@"id"];
+    NSString *cell_text = [[NSString alloc] initWithFormat:@"%@",[college_name objectAtIndex:indexPath.row]];
     // Configure the cell.
+    cell.textLabel.text = cell_text;
+    
     return cell;
 }
 
@@ -119,6 +150,18 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
 	*/
+    
+    NSMutableArray *asdf = [deserializedData mutableArrayValueForKey:@"college"];
+    NSMutableArray *college_name = [asdf mutableArrayValueForKey:@"college"];
+    NSMutableArray *college_id = [asdf mutableArrayValueForKey:@"id"];   
+    
+    
+    CollegePlayersViewController *collegeViewControlller = [[CollegePlayersViewController alloc] init];
+    collegeViewControlller.college_id =  [college_id objectAtIndex:indexPath.row];
+    collegeViewControlller.college_name = [college_name objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:collegeViewControlller animated:YES];
+    [collegeViewControlller release];
+    
 }
 
 - (void)didReceiveMemoryWarning

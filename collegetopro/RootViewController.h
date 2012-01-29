@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASIHTTPRequest.h"
+#import "JSONKit.h"
 
-@interface RootViewController : UITableViewController
+@interface RootViewController : UITableViewController <UINavigationControllerDelegate>
+{
+    NSDictionary *deserializedData;
+}
 
+@property (nonatomic,retain) NSDictionary *deserializedData;
 @end
